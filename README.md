@@ -29,6 +29,10 @@ For more info see:
 - https://playbook.internal.coop/platforms/cloud_platform/azure/guide_azure_create_sandbox.html
 - https://playbook.internal.coop/platforms/cloud_platform/dev_build_deploy/terraform/guide_terraform_connect_to_sandbox.html
 
+## Caveats
+
+- The azure stuff likely won't work, will fix it later.
+
 ## Template Instructions
 
 1. Copy `terraform.tfvars.example` to `terraform.tfvars`
