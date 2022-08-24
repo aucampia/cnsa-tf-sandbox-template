@@ -6,16 +6,17 @@
 docker compose build
 docker compose pull
 
-# Check your credentials
-docker compose run --rm gcloud  gcloud auth list
+# Check your gcloud credentials
+docker compose run --rm gcloud gcloud auth list
 
 # re-initialize TF (do this when you get complaints about versions/modules)
 docker compose run --rm terraform-devtools terraform-reinit
 
 # fix TF validation errors
-docker compose run --rm terraform-devtools validate
-# validate TF code
 docker compose run --rm terraform-devtools validate-fix
+# validate TF code
+docker compose run --rm terraform-devtools validate
+
 # apply TF
 docker compose run --rm terraform-devtools terraform apply
 ```
