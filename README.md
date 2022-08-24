@@ -21,6 +21,14 @@ docker compose run --rm terraform-devtools validate
 docker compose run --rm terraform-devtools terraform apply
 ```
 
+## More info
+
+For more info see:
+- https://playbook.internal.coop/guidelines/cloud_platforms/sandboxes.html
+- https://playbook.internal.coop/platforms/cloud_platform/GCP/guide_google_create_sandbox.html
+- https://playbook.internal.coop/platforms/cloud_platform/azure/guide_azure_create_sandbox.html
+- https://playbook.internal.coop/platforms/cloud_platform/dev_build_deploy/terraform/guide_terraform_connect_to_sandbox.html
+
 ## Template Instructions
 
 1. Copy `terraform.tfvars.example` to `terraform.tfvars`
