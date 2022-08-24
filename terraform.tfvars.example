@@ -1,0 +1,8 @@
+project_id      = "sandbox-iwan-aucamp-e332"
+region          = "europe-north1"
+zone            = "europe-north1-b"
+environment     = "sandbox"
+tenant_id       = "ad12c024-e320-4b19-aa0b-b0c36c136e70"
+subscription_id = "80ae7bf3-e413-4ca6-a9bb-57e92cdfe5b7"
+rg_name         = "rg-sandbox-iwan-aucamp"
+location        = "norwayeast"

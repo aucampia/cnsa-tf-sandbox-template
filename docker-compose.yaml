@@ -1,0 +1,19 @@
+services:
+  terraform-devtools:
+    image: ghcr.io/coopnorge/engineering-docker-images/e0/devtools-terraform-v1beta1:latest
+    working_dir: /srv/workspace
+    volumes:
+      - .:/srv/workspace:z
+      - xdg-cache-home:/root/.cache
+      - $HOME/.terraform.d:/root/.terraform.d/
+      - $HOME/.config/gcloud/:/root/.config/gcloud/
+      - dot-terraform:/srv/workspace/.terraform
+  gcloud:
+    image: docker.io/google/cloud-sdk:slim
+    working_dir: /srv/workspace
+    volumes:
+      - .:/srv/workspace:z
+      - $HOME/.config/gcloud/:/root/.config/gcloud/
+volumes:
+  xdg-cache-home: {}
+  dot-terraform: {}
