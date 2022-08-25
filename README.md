@@ -6,6 +6,10 @@
 docker compose build
 docker compose pull
 
+# Login to gcloud
+docker compose run --rm gcloud gcloud auth login
+docker compose run --rm gcloud gcloud auth application-default login
+
 # Check your gcloud credentials
 docker compose run --rm gcloud gcloud auth list
 
